@@ -59,12 +59,14 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FloatingActionButton(
-                  onPressed: () => context.read<CounterBloc>().add(Decrement()),
+                  onPressed: () =>
+                      context.read<CounterBloc>().add(DecrementCounter()),
                   tooltip: 'Decrement',
                   child: const Icon(Icons.remove),
                 ),
                 FloatingActionButton(
-                  onPressed: () => context.read<CounterBloc>().add(Increment()),
+                  onPressed: () =>
+                      context.read<CounterBloc>().add(IncrementCounter()),
                   tooltip: 'Increment',
                   child: const Icon(Icons.add),
                 ),

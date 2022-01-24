@@ -3,6 +3,6 @@ part of 'counter_bloc.dart';
 @immutable
 abstract class CounterEvent {}
 
-class Increment extends CounterEvent {}
+class IncrementCounter extends CounterEvent {}
 
-class Decrement extends CounterEvent {}
+class DecrementCounter extends CounterEvent {}
